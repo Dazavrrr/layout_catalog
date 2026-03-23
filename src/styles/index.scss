@@ -1,3 +1,13 @@
-body {
+@import './utils/variables';
+@import './blocks/header';
+@import './blocks/catalog';
+@import './blocks/card';
+@import './blocks/stars';
+
+body,
+p,
+h3 {
   margin: 0;
+  font-family: $font-family;
+  box-sizing: border-box;
 }
