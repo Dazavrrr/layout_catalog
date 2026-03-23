@@ -12,3 +12,23 @@ $font-family: Roboto, sans-serif;
 
 // SIZES
 $card-size: 200px;
+$padding-header: 0 50px;
+$card-padding: 32px 16px 16px;
+$logo-size: 40px;
+$main-text-size: 12px;
+$link-underscore-height: 4px;
+$border-radius: 5px;
+$star-size: 16px;
+$margin-right-sm: 4px;
+$line-height: 14px;
+
+@mixin center-flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin space-between() {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,15 +1,14 @@
 .header {
-  display: flex;
+  @include space-between;
+  
   align-items: center;
-  justify-content: space-between;
-
-  padding: 0 50px;
+  padding: $padding-header;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   &__logo {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: $logo-size;
+    height: $logo-size;
   }
 }
 
@@ -36,7 +35,7 @@
     display: flex;
     align-items: center;
     color: $main-text-color;
-    font-size: 12px;
+    font-size: $main-text-size;
     font-weight: 500;
     height: 60px;
     transition: color 300ms;
@@ -55,8 +54,8 @@
         bottom: 0;
         right: 0;
         width: 100%;
-        height: 4px;
-        border-radius: 5px;
+        height: $link-underscore-height;
+        border-radius: $border-radius;
         background-color: $blue-accent;
       }
     }
