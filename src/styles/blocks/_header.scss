@@ -21,7 +21,7 @@
   }
 
   &__item {
-    margin-left: 20px;
+    margin-left: $spacing-md;
 
     &:first-child {
       margin-left: 0;
@@ -36,9 +36,9 @@
     align-items: center;
     color: $main-text-color;
     font-size: $text-size-sm;
-    font-weight: 500;
-    height: 60px;
-    transition: color 300ms;
+    font-weight: $font-weight-medium;
+    height: $header-link-height;
+    transition: color $transition-duration;
 
     &:hover {
       color: $blue-accent;

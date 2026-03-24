@@ -14,30 +14,35 @@ $text-size-xs: 10px;
 $text-size-sm: 12px;
 $text-size-md: 14px;
 $text-size-lg: 16px;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
 
 // SIZES
+$header-link-height: 60px;
 $card-size: 200px;
+$card-image-width: 160px;
+$card-image-height: 134px;
 $logo-size: 40px;
 $border-radius: 5px;
 $star-size: 16px;
 $link-underscore-height: 4px;
 $card-button-height: 40px;
-
-$margin-right-sm: 4px;
-$card-image-margin: 0 auto 40px;
-$margin-top-sm: 16px;
-
+$spacing-xxs: 4px;
+$spacing-xs: 16px;
+$spacing-sm: 20px;
+$spacing-md: 24px;
+$spacing-lg: 40px;
+$padding-xs: 12px;
 $padding-sm: 16px;
 $padding-mid: 32px;
 $padding-lg: 50px;
-
 $line-height-main: 14px;
 $line-height-mid: 16px;
 $line-height-large: 18px;
-
 $catalog-gap-vertical: 46px;
 $catalog-gap-horizontal: 48px;
 $catalog-padding: 50px 40px;
+$border-width: 1px;
 
 // MIXINS
 @mixin center-flex() {
@@ -51,7 +56,11 @@ $catalog-padding: 50px 40px;
   justify-content: space-between;
 }
 
-//BREAKPOINTS
+// BREAKPOINTS
 $breakpoint-sm: 488px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
+
+// TRANSITIONS
+$transition-duration: 300ms;
+$card-hover-scale: 1.2;

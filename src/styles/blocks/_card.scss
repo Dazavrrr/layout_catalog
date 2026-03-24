@@ -5,27 +5,27 @@
   box-sizing: border-box;
   background-color: $main-bg-color;
   border-radius: $border-radius;
-  border: 1px solid $neutral-grey-color;
-  transition: transform 300ms;
+  border: $border-width solid $neutral-grey-color;
+  transition: transform $transition-duration;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale($card-hover-scale);
   }
 
   &__image {
     display: block;
-    width: 160px;
-    height: 134px;
-    margin: $card-image-margin;
+    width: $card-image-width;
+    height: $card-image-height;
+    margin: 0 auto $spacing-lg;
   }
 
   &__title {
     font-size: $text-size-sm;
-    font-weight: 500;
+    font-weight: $font-weight-medium;
     line-height: $line-height-large;
     color: $main-text-color;
-    margin-bottom: 4px;
-    transition: color 300ms;
+    margin-bottom: $spacing-xxs;
+    transition: color $transition-duration;
 
     .card:hover & {
       color: $text-hover-color;
@@ -42,7 +42,7 @@
     @include space-between;
 
     align-items: center;
-    margin-top: $margin-top-sm;
+    margin-top: $spacing-sm;
   }
 
   &__reviews {
@@ -55,7 +55,7 @@
   &__price {
     @include space-between;
 
-    margin-top: 24px;
+    margin-top: $spacing-md;
   }
 
   &__text {
@@ -67,7 +67,7 @@
   &__number {
     font-size: $text-size-lg;
     line-height: $line-height-large;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     color: $main-text-color;
   }
 
@@ -82,15 +82,15 @@
     color: $main-bg-color;
     text-transform: uppercase;
     border-radius: $border-radius;
-    font-weight: 700;
-    padding: 12px 0;
-    margin-top: $margin-top-sm;
+    font-weight: $font-weight-bold;
+    padding: $padding-xs 0;
+    margin-top: $spacing-xs;
     height: $card-button-height;
-    border: 1px solid $blue-accent;
+    border: $border-width solid $blue-accent;
     text-decoration: none;
     transition:
-      background-color 300ms,
-      color 300ms;
+      background-color $transition-duration,
+      color $transition-duration;
 
     &:hover {
       color: $blue-accent;
