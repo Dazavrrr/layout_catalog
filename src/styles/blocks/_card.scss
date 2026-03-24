@@ -1,6 +1,6 @@
 .card {
   margin: 0;
-  padding: $card-padding;
+  padding: $padding-mid $padding-sm $padding-sm;
   width: $card-size;
   box-sizing: border-box;
   background-color: $main-bg-color;
@@ -16,13 +16,13 @@
     display: block;
     width: 160px;
     height: 134px;
-    margin: 0 auto 40px;
+    margin: $card-image-margin;
   }
 
   &__title {
-    font-size: $main-text-size;
+    font-size: $text-size-sm;
     font-weight: 500;
-    line-height: 18px;
+    line-height: $line-height-large;
     color: $main-text-color;
     margin-bottom: 4px;
     transition: color 300ms;
@@ -33,8 +33,8 @@
   }
 
   &__code {
-    font-size: 10px;
-    line-height: $line-height;
+    font-size: $text-size-xs;
+    line-height: $line-height-main;
     color: $secondary-text-color;
   }
 
@@ -42,13 +42,13 @@
     @include space-between;
 
     align-items: center;
-    margin-top: 16px;
+    margin-top: $margin-top-sm;
   }
 
   &__reviews {
     margin: 0;
-    font-size: 10px;
-    line-height: $line-height;
+    font-size: $text-size-xs;
+    line-height: $line-height-main;
     color: $main-text-color;
   }
 
@@ -59,14 +59,14 @@
   }
 
   &__text {
-    font-size: $main-text-size;
-    line-height: 18px;
+    font-size: $text-size-sm;
+    line-height: $line-height-large;
     color: $secondary-text-color;
   }
 
   &__number {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: $text-size-lg;
+    line-height: $line-height-large;
     font-weight: 700;
     color: $main-text-color;
   }
@@ -75,17 +75,17 @@
     @include center-flex;
 
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: $text-size-md;
     width: 100%;
-    line-height: 16px;
+    line-height: $line-height-mid;
     background-color: $blue-accent;
     color: $main-bg-color;
     text-transform: uppercase;
     border-radius: $border-radius;
     font-weight: 700;
     padding: 12px 0;
-    margin-top: 16px;
-    height: 40px;
+    margin-top: $margin-top-sm;
+    height: $card-button-height;
     border: 1px solid $blue-accent;
     text-decoration: none;
     transition:

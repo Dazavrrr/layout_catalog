@@ -1,9 +1,9 @@
 .header {
   @include space-between;
-  
+
   align-items: center;
-  padding: $padding-header;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 $padding-lg;
+  box-shadow: $header-shadow;
 
   &__logo {
     display: block;
@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     color: $main-text-color;
-    font-size: $main-text-size;
+    font-size: $text-size-sm;
     font-weight: 500;
     height: 60px;
     transition: color 300ms;

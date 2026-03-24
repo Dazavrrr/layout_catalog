@@ -6,22 +6,40 @@ $main-text-color: #060b35;
 $secondary-text-color: #616070;
 $neutral-grey-color: #f3f3f3;
 $text-hover-color: #34568b;
+$header-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-// TEXTS
+// TEXT
 $font-family: Roboto, sans-serif;
+$text-size-xs: 10px;
+$text-size-sm: 12px;
+$text-size-md: 14px;
+$text-size-lg: 16px;
 
 // SIZES
 $card-size: 200px;
-$padding-header: 0 50px;
-$card-padding: 32px 16px 16px;
 $logo-size: 40px;
-$main-text-size: 12px;
-$link-underscore-height: 4px;
 $border-radius: 5px;
 $star-size: 16px;
-$margin-right-sm: 4px;
-$line-height: 14px;
+$link-underscore-height: 4px;
+$card-button-height: 40px;
 
+$margin-right-sm: 4px;
+$card-image-margin: 0 auto 40px;
+$margin-top-sm: 16px;
+
+$padding-sm: 16px;
+$padding-mid: 32px;
+$padding-lg: 50px;
+
+$line-height-main: 14px;
+$line-height-mid: 16px;
+$line-height-large: 18px;
+
+$catalog-gap-vertical: 46px;
+$catalog-gap-horizontal: 48px;
+$catalog-padding: 50px 40px;
+
+// MIXINS
 @mixin center-flex() {
   display: flex;
   justify-content: center;
@@ -32,3 +50,8 @@ $line-height: 14px;
   display: flex;
   justify-content: space-between;
 }
+
+//BREAKPOINTS
+$breakpoint-sm: 488px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
